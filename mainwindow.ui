@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>644</width>
-    <height>574</height>
+    <width>650</width>
+    <height>727</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,21 +20,14 @@
       <x>0</x>
       <y>0</y>
       <width>641</width>
-      <height>481</height>
+      <height>531</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="2">
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="scanButton">
        <property name="text">
         <string>扫描</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0" colspan="3">
-      <widget class="QProgressBar" name="progressBar">
-       <property name="value">
-        <number>24</number>
        </property>
       </widget>
      </item>
@@ -45,11 +38,8 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="0" colspan="3">
-      <widget class="QTableView" name="tableView"/>
-     </item>
      <item row="0" column="1">
-      <widget class="QComboBox" name="comboBox">
+      <widget class="QComboBox" name="devTypeComboBox">
        <item>
         <property name="text">
          <string>智慧大屏</string>
@@ -62,10 +52,20 @@
        </item>
       </widget>
      </item>
-     <item row="3" column="0" colspan="3">
-      <widget class="QListView" name="listView"/>
+     <item row="1" column="0" colspan="3">
+      <widget class="QTableWidget" name="deviceTableWidget"/>
      </item>
     </layout>
+   </widget>
+   <widget class="QListView" name="logListView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>540</y>
+      <width>641</width>
+      <height>141</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -73,7 +73,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>644</width>
+     <width>650</width>
      <height>21</height>
     </rect>
    </property>
